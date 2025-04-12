@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <h2></h2>
+    <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 400px; 
+        }
+      
+        label {
+            margin-top: 5px;
+          font-weight: bold;
+        }
+      
+        input, button {
+          padding: 10px;
+          margin-bottom: 2px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          width: 100%;
+          box-sizing: border-box; 
+        }
+      
+        button {
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      
+        button:hover {
+          background-color: #0056b3;
+        }
+      </style>
+    <form action="/action_page.php">
+        <label for="fname">Recipe Name</label> 
+        <input type="text" id="fname"><br></br>
+        <label for="lname">Ingredients</label>
+        <input type="text" id="lname"><br></br>
+        <label for="dof">Cooking Instruction</label>
+        <input type="text" id="dof"><br></br>
+        <label for="Image">Insert the Image</label>
+        <input type="file" id="Image" name="Image"><br></br>
+        <label for="categories">Choose a category:</label>
+        <select  id="categories" name="categories" style="height: 40px;">
+          <option value="italian">Vegan</option>
+          <option value="afghan">Desert</option>
+          <option value="desserts">Quick meals</option>
+          <option value="vegan">Drinks</option>
+          <option value="Traditional">Traditional</option>
+        </select><br></br>
+        <input type="submit" value="submit" style="background-color: yellow" >
+
+    </form>
+    
+</body>
+</html>
